@@ -1,4 +1,5 @@
 import { Collection, Client, MessageEmbed } from "discord.js";
+import fs from "fs";
 
 const client = new Client();
 client.commands = new Collection();
