@@ -1,8 +1,8 @@
-import { Collection, Client, MessageEmbed } from "discord.js";
-import fs from "fs";
+const fs = require('fs');
+const Discord = require('discord.js');
 
-const client = new Client();
-client.commands = new Collection();
+const client = new Discord.Client();
+client.commands = new Discord.Collection();
 
 const commandFolders = fs.readdirSync('./commands');
 
@@ -14,7 +14,7 @@ for (const folder of commandFolders) {
 	}
 }
 
-const cooldowns = new Collection();
+const cooldowns = new Discord.Collection();
 
 client.once('ready', () => {
 	console.log('Ready!');
@@ -53,7 +53,7 @@ client.on('message', message => {
 	}
 
 	if (!cooldowns.has(command.name)) {
-		cooldowns.set(command.name, new Collection());
+		cooldowns.set(command.name, new Discord.Collection());
 	}
 
 	const now = Date.now();
