@@ -1,4 +1,3 @@
-export = {
 	name: 'help',
 	description: 'List all of my commands or info about a specific command.',
 	aliases: ['commands'],
@@ -40,5 +39,4 @@ export = {
 		data.push(`**Cooldown:** ${command.cooldown || 3} second(s)`);
 
 		message.channel.send(data, { split: true });
-	},
-};
+	};
