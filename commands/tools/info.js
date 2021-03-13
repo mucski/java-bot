@@ -1,3 +1,5 @@
+const { MessageEmbed } = require("discord.js");
+
 module.exports = {
 	name: 'info',
 	description: 'Information about the bot, and its owner.',
