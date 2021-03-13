@@ -9,7 +9,7 @@ module.exports = {
         .setTitle('Some title')
         .setURL('https://discord.js.org/')
         .setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
-        .setDescription(`${message.client.user.name}\nVersion:${version}`)
+        .setDescription(`${message.client.user.name}\nVersion:${process.env.VERSION}\nBot owner:${process.env.OWNER}`)
         .setThumbnail('https://i.imgur.com/wSTFkRM.png')
         .addField('Inline field title', 'Some value here', true)
         .setImage('https://i.imgur.com/wSTFkRM.png')
