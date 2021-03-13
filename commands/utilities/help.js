@@ -1,4 +1,4 @@
-	export(message, args) => {
+	export default async (message, args) => {
 		const data = [];
 		const { commands } = message.client;
 
