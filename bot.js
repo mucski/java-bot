@@ -1,8 +1,4 @@
-import fs from "fs";
 import { Collection, Client, MessageEmbed } from "discord.js";
-// DotEnv
-//import dotenv from "dotenv";
-//dotenv.config();
 
 const client = new Client();
 client.commands = new Collection();
@@ -13,7 +9,6 @@ for (const folder of commandFolders) {
 	const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
 	for (const file of commandFiles) {
 		const command = import(`./commands/${folder}/${file}`);
-		//const command = require(`./commands/${folder}/${file}`);
 		client.commands.set(command.name, command);
 	}
 }
