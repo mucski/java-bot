@@ -1,4 +1,4 @@
-name: help,	
+name: 'help'	
 export default async (message, args) => {
 	const data = [];
 	const { commands } = message.client;
