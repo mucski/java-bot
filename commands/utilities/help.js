@@ -1,5 +1,5 @@
 name: 'help'	
-export default async (message, args) => {
+export default (message, args) => {
 	const data = [];
 	const { commands } = message.client;
 
