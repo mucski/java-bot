@@ -1,4 +1,4 @@
-	execute(message, args); {
+	export(message, args) => {
 		const data = [];
 		const { commands } = message.client;
 
