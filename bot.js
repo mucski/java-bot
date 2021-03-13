@@ -1,11 +1,11 @@
 import fs from "fs";
-import { Discord, Client, MessageEmbed } from "discord.js";
+import { Collection, Client, MessageEmbed } from "discord.js";
 // DotEnv
 import dotenv from "dotenv";
 dotenv.config();
 
-const client = new Discord.Client();
-client.commands = new Discord.Collection();
+const client = new Client();
+client.commands = new Collection();
 
 const commandFolders = fs.readdirSync('./commands');
 
@@ -17,7 +17,7 @@ for (const folder of commandFolders) {
 	}
 }
 
-const cooldowns = new Discord.Collection();
+const cooldowns = new Collection();
 
 client.once('ready', () => {
 	console.log('Ready!');
