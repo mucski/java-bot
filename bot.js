@@ -1,6 +1,8 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token, version } = require('./config.json');
+// DotEnv
+import dotenv from "dotenv";
+dotenv.config();
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
