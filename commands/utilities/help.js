@@ -34,4 +34,4 @@
 		data.push(`**Cooldown:** ${command.cooldown || 3} second(s)`);
 
 		message.channel.send(data, { split: true });
-	}
+	};
