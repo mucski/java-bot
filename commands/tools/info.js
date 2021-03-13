@@ -6,15 +6,15 @@ module.exports = {
 	execute(message) {
         const exampleEmbed = new MessageEmbed()
         .setColor('#0099ff')
-        .setTitle('Some title')
-        .setURL('https://discord.js.org/')
-        .setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+        .setTitle(`Mucski's javascript bot.`)
+        //.setURL('https://discord.js.org/')
+        //.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
         .setDescription(`${message.client.user.name}\nVersion:${process.env.VERSION}`)
-        .setThumbnail('https://i.imgur.com/wSTFkRM.png')
-        .addField('Inline field title', 'Some value here', true)
-        .setImage('https://i.imgur.com/wSTFkRM.png')
+        //.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+        //.addField('Inline field title', 'Some value here', true)
+        //.setImage('https://i.imgur.com/wSTFkRM.png')
         .setTimestamp()
-        .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+        .setFooter('Burp.');
     
     message.channel.send(exampleEmbed);
 	},
