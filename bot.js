@@ -1,8 +1,8 @@
 import fs from "fs";
 import { Collection, Client, MessageEmbed } from "discord.js";
 // DotEnv
-import dotenv from "dotenv";
-dotenv.config();
+//import dotenv from "dotenv";
+//dotenv.config();
 
 const client = new Client();
 client.commands = new Collection();
