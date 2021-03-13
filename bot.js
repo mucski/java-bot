@@ -1,5 +1,5 @@
-const fs = require('fs');
-const Discord = require('discord.js');
+import fs from "fs";
+import { Discord, Client, MessageEmbed } from "discord.js";
 // DotEnv
 import dotenv from "dotenv";
 dotenv.config();
@@ -83,4 +83,4 @@ client.on('message', message => {
 	}
 });
 
-client.login(token);
+client.login(process.env.TOKEN);
