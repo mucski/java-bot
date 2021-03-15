@@ -5,9 +5,10 @@ module.exports = {
     permission: 'OWNER',
 	execute(message, args) {
 	    if (!args[0]) {
-	        message.reply('the args were empty')
+	        message.client.setActivity(args)
+	        message.reply(`I have set my activity to ${args}`)
 	    } else {
-	        message.reply('the args werent empty')
+	        message.reply(`could not set my activity to nothing.`)
 	    }
 	},
 };
