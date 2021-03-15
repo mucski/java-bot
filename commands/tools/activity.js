@@ -4,7 +4,11 @@ module.exports = {
 	usage: '<activity>',
     permission: 'OWNER',
 	execute(message, args) {
-        message.client.user.setActivity(`${args.join(" ")}`);
-        message.reply(`I have set activity to ${args.join(" ")}`);
+	    if (args) {
+            message.client.user.setActivity(`${args.join(" ")}`);
+            message.reply(`I have set activity to ${args.join(" ")}`);
+	    } else {
+	        return message.reply('Could not set empty string as activity');
+	    }
 	},
 };
