@@ -5,10 +5,10 @@ module.exports = {
     permission: 'OWNER',
 	execute(message, args) {
 	    if (args[0]) {
-	        message.client.user.setActivity(args, {type: "PLAYING"})
-	        message.reply(`I have set my activity to ${args}`)
+	        message.client.user.setActivity(args);
+	        message.reply(`I have set my activity to ${args}`);
 	    } else {
-	        message.reply(`could not set my activity to nothing.`)
+	        message.reply(`could not set my activity to nothing.`);
 	    }
 	},
 };
