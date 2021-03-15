@@ -4,7 +4,7 @@ module.exports = {
 	usage: '<activity>',
     permission: 'OWNER',
 	execute(message, args) {
-	    if (args[0]) {
+	    if (message) {
             message.client.user.setActivity(`${args.join(" ")}`);
             message.reply(`I have set activity to ${args.join(" ")}`);
 	    } else {
