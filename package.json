@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "bot.js",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "fetch": "^1.1.0",
+    "paladins.js": "^2.2.1"
   },
   "devDependencies": {},
   "scripts": {
