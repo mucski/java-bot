@@ -1,8 +1,8 @@
 const paladinsJS = require('paladins.js');
 
 let api = new paladinsJS.API({
-    devId: '3462',
-    authKey: 'B6987E84BC1A4838AD03782720337D74'
+    devId: process.env.DEVID,
+    authKey: process.env.AUTHKEY
 }); // API loaded and ready to go. 
 
 module.exports = {
