@@ -1,4 +1,4 @@
-const api = paladinsJS.API();
+const api = require('paladins.js');
 
 module.exports = {
     name: 'test',
