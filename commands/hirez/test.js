@@ -1,8 +1,9 @@
-const api = require('paladins.js');
+const paladinsJS = require('paladins.js');
 
 module.exports = {
     name: 'test',
     execute(message) {
+        const api = paladinsJS.API();
         api.getDataUsage()
         .then((res) => {
             console.log(res)
