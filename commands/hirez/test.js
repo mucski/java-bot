@@ -11,7 +11,7 @@ module.exports = {
         api.getDataUsage()
         .then((res) => {
             console.log(res)
-            const rssponse = JSON.stringify(res)
+            const response = JSON.stringify(res)
             message.channel.send(response)
         })
         .catch((err) => {
