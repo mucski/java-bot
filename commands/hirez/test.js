@@ -1,9 +1,8 @@
-const paladinsJS = require('paladins.js');
+const api = require('bot.js');
 
 module.exports = {
     name: 'test',
     execute(message) {
-        const api = new paladinsJS.API();
         api.getDataUsage()
         .then((res) => {
             console.log(res)
