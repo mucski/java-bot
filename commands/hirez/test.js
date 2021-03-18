@@ -1,4 +1,4 @@
-
+const api = paladinsJS.API();
 
 module.exports = {
     name: 'test',
