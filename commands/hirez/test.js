@@ -10,8 +10,7 @@ module.exports = {
     execute(message) {
         api.getDataUsage()
         .then((res) => {
-            res.map(data => data);
-            console.log(data[0])
+            console.log(res)
         })
         .catch((err) => {
             // Handle the error
