@@ -1,6 +1,7 @@
 module.exports = {
     name: 'test',
     execute(message) {
+        exports.api = api;
         api.getDataUsage()
         .then((res) => {
             console.log(res)
