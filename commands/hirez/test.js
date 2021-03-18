@@ -3,7 +3,7 @@ const paladinsJS = require('paladins.js');
 module.exports = {
     name: 'test',
     execute(message) {
-        const api = paladinsJS.API();
+        const api = new paladinsJS.API();
         api.getDataUsage()
         .then((res) => {
             console.log(res)
