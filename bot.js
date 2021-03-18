@@ -4,6 +4,13 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 
+const paladinsJS = require('paladins.js');
+
+let api = new paladinsJS.API({
+    devId: process.env.DEVID,
+    authKey: process.env.AUTHKEY
+});
+
 const commandFolders = fs.readdirSync('./commands');
 
 for (const folder of commandFolders) {
@@ -19,13 +26,6 @@ const cooldowns = new Discord.Collection();
 client.once('ready', () => {
 	console.log('Ready!');
 });
-
-const paladinsJS = require('paladins.js');
-
-let api = new paladinsJS.API({
-    devId: process.env.DEVID,
-    authKey: process.env.AUTHKEY
-}); // API loaded and ready to go.
 
 client.on('message', message => {
 	if (!message.content.startsWith(process.env.PREFIX) || message.author.bot) return;

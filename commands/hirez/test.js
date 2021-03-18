@@ -1,5 +1,3 @@
-const api = require('bot.js');
-
 module.exports = {
     name: 'test',
     execute(message) {
