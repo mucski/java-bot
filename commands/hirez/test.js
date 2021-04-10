@@ -5,7 +5,7 @@ module.exports = {
         api.getDataUsage()
         .then((res) => {
             console.log(res)
-            const response = JSON.stringify(res)
+            const response = JSON.dump(response)
             message.channel.send(response)
         })
         .catch((err) => {
